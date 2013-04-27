@@ -9,7 +9,10 @@
   <meta name="author" content="Matt Chen">
 
   
-  <meta name="description" content="如果 BitTorrent 开始做云端同步服务，你还会用别家的吗？ 这并不仅仅是“如果”——今天 CNet 向我们介绍了 BitTorrent 推出的一款新服务 BitTorrent Sync，它帮助用户在多台设备之间同步个人文件。 BitTorrent Sync &hellip;">
+  <meta name="description" content="入门指南 在你希望同步的设备上安装 BitTorrent Sync。
+在其中一个设备上选择要同步的文件夹并为这个文件夹生成一个密钥。密钥是随机和唯一的，它就像一把钥匙，用来在一个同步网络上连接多个设备。
+在其他设备上，选择一个要同步的文件夹并输入相同的密钥。
+在你希望同步的所有设备上保持 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +68,161 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013-04-26-bittorrent-sync-cong-zhe-kai-shi/">BitTorrent Sync 从这开始</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-26T20:57:00+08:00" pubdate data-updated="true">Apr 26<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>入门指南</h2>
+
+<ol>
+<li>在你希望同步的设备上安装 BitTorrent Sync。</li>
+<li>在其中一个设备上选择要同步的文件夹并为这个文件夹生成一个密钥。密钥是随机和唯一的，它就像一把钥匙，用来在一个同步网络上连接多个设备。</li>
+<li>在其他设备上，选择一个要同步的文件夹并输入相同的密钥。</li>
+<li>在你希望同步的所有设备上保持 BitTorrent Sync 开启。</li>
+<li>可以在任何时候通过程序接口在 Windows 和 Mac 上管理同步的文件夹，或者在 Linux 上通过 WebUI 和配置文件进行管理。</li>
+</ol>
+
+
+<h2>选择文件夹</h2>
+
+<p>BitTorrent Sync 允许同步任意数量的文件夹和文件。</p>
+
+<p>要往 Sync 添加一个文件夹，在 <strong>Folders</strong> 标签页的底部，点击 &#8216;+&#8217; 按钮（Mac）或 &#8216;Add&#8217; 按钮（Windows）。然后在你的电脑上或外置驱动器上选择任意文件夹（要注意你必须有修改这个文件夹的权限）。</p>
+
+<p>如果文件夹不存在，你可以在你的电脑上的任何地方创建一个新文件夹来进行上述操作。</p>
+
+<p><img src="/images/201304/260001.png"></p>
+
+<h2>生成/使用一个密钥</h2>
+
+<p>同步的文件夹通过一个普通密钥连接——每个要同步的文件夹分别有一个密钥。</p>
+
+<p>要新增一个同步网络，点击 <strong>Generate</strong> 来创建一个新的密钥，这个密钥必须在每个希望同步的设备上输入。也可以通过输入其他人共享给你的密钥来加入一个同步网络。</p>
+
+<p><img src="/images/201304/260002.png"></p>
+
+<p>如果需要找到密钥，可以通过在 <strong>Folders</strong> 标签页上右键点击文件夹来找回，可以将其复制到剪贴板或在 folder preferences 的 advanced 标签页查看。</p>
+
+<p><img src="/images/201304/260003.png"></p>
+
+<h2>单向同步</h2>
+
+<p>如果你希望只从你的电脑同步过来信息（而不要同步回去），可以通过使用只读密钥来实现。例如，你可能希望用只读密钥共享一个装满了照片和视频的文件夹给你的家人，这样除了你之外其他人就不能往这个文件夹中添加或删除文件。</p>
+
+<p>只读密钥可以通过在 <strong>Folders</strong> 标签页上右键点击文件夹来找到，可以将其复制到剪贴板或在 folder preferences 的 <strong>Advanced</strong> 标签页查看。</p>
+
+<p><img src="/images/201304/260004.png"></p>
+
+<p>在任意设备上使用只读密钥都可以完整同步，但对同步内容的修改将不会影响原始设备上的内容。你可以根据对不同设备的同步需求来使用只读密钥配合主密钥。使用只读密钥的设备无法对同步的文件夹生成新密钥。</p>
+
+<h2>单次密钥</h2>
+
+<p>出于安全考虑，你可能不会想要共享主密钥。这种情况下你可以创建一个只能使用一次且会在 24 小时内过期的密钥。可以是只读的也可以是全访问权限的密钥。单次密钥一旦被输入，设备将会收到一个只读的或全访问权限的永久密钥，以便在同步网络中使用。</p>
+
+<p><img src="/images/201304/260005.png"></p>
+
+<h2>程序首选项</h2>
+
+<p>可以在主窗口的 <strong>Preferences</strong> 标签页设置程序的首选项。</p>
+
+<p>可以在这里修改用来在其他设备上显示的当前计算机名，配置更新和体型，修改监听的端口和使用 UPnP 映射。也可以对上传和下载进行限速。</p>
+
+<p><img src="/images/201304/260006.png"></p>
+
+<p>这个标签页也可以访问到高级首选项。需要注意的是高级首选项是提供给专家用户使用的，普通用户如果要做修改的话风险自负。关于高级首选项的信息可以在 [用户指南] 找到。</p>
+
+<h2>文件夹首选项</h2>
+
+<p>除了可以修改整个程序的设置，BitTorrent Sync 还允许你为每个文件夹单独调整首选项。可以在 <strong>Folders</strong> 标签页通过双击或右键单击一个文件夹来进行设置。</p>
+
+<h3>通用选项标签页</h3>
+
+<p>BitTorrent Sync 通过预设的配置来确保最佳性能，当然你也可以根据自己的需要来进行调整：</p>
+
+<ul>
+<li>如果因为 NAT 问题而导致无法连接到其他设备时，使用中继服务器。</li>
+<li>tracker server（追踪服务器）可以帮助在设备间通讯和互相发现。</li>
+<li>“Delete Files to Sync trash（删除文件到同步回收站）”在所有设备中保存删除的文件到“.SyncTrash”文件夹。如果不选中该项，删除的文件将会被移动到系统的 Trash\Recycle Bin（不同的操作系统可能不一样）。</li>
+<li>“Use predefined hosts（使用预定义的 hosts）”是用来为已知客户端指定 ip:port 或 host:port 的选项。这样，如果你的一个设备使用静态可访问的 IP，节点之间就可以直接连接。</li>
+</ul>
+
+
+<h3>高级选项标签页</h3>
+
+<p>你可以在高级文件夹首选项为同步文件夹复制、修改或生成新的密钥。</p>
+
+<ul>
+<li>Secret（密钥）是一个用来连接文件夹的 32 位字符主键。所有使用这个密钥添加的文件夹，都将被授予双向同步的全部权限。你可以随时修改，或使用一个 40 个以上字符的 Base64 字符串来替换主密钥（文件夹密钥若有改动，就必须在同步网络中的其他设备上重新输入）。</li>
+<li>Read only secret（只读密钥）是基于主密钥生成的，用来做单向同步。任何使用只读密钥的文件夹都可以完全同步，但对文件夹的修改将不会作用到原始设备上。而被授予只读密钥的文件夹，自然也无法修改它的密钥。</li>
+<li>One-time secret（单次密钥）是一个由主密钥操作的（区别于只读密钥）文件夹安全选项。可以生成完全访问或只读短键（16 个字符），它智能使用一次，并且必须在 24 小时内被激活。连接一旦被建立，通过单次密钥添加的文件夹，将会收到一个生成单次密钥设备生成的，持久并且是只读的主键。</li>
+</ul>
+
+
+<p><img src="/images/201304/260007.png"></p>
+
+<h2>Linux 和 NAS</h2>
+
+<h3>WebUI</h3>
+
+<p>WebUI 是访问 BitTorrent Sync 的默认方法，可以通过 <em>YourLocalIP:8888/gui</em> 来访问。</p>
+
+<p><img src="/images/201304/260008.png"></p>
+
+<p>和桌面程序一样，可以通过 WebUI 来管理通用设置和文件夹首选项。</p>
+
+<h3>配置文件</h3>
+
+<p>通过配置文件提供了稍多一点的设置选项，它是一个 JSON 格式的文件。</p>
+
+<p><img src="/images/201304/260009.png"></p>
+
+<p>通过配置文件设置首选项：</p>
+
+<ol>
+<li>通过执行 &#8211;dump-sample-config 来获取示例配置，可以看到选项和注释的列表。</li>
+<li>可以保存配置文件到任意地方。例如，要保存到当前文件夹，运行 ./btsync &#8211;dump-sample-config > sync.conf</li>
+<li>定制配置项，并使用修改后的配置文件来运行 BitTorrent Sync。例如，如果配置文件和 BitTorrent Sync 在同一个文件夹，可以运行：./btsync &#8211;config sync.conf</li>
+</ol>
+
+
+<p>在通过修改过的配置文件来运行 BitTorrent Sync 之前，确保进行 JSON 有效测试。否则，你可能会得到错误消息。</p>
+
+<p>BitTorrent Sync 提供了大量的配置选项来确保你能得到你想要的。默认的 Sync（同步）设置基于 BitTorrent 广泛的普通网络和 P2P 网络经验，适用于大多数的用户。</p>
+
+<h3>FAQ</h3>
+
+<p>如果对 BitTorrent Sync 有其他的问题或有什么要说的，欢迎访问 BitTorrent Sync 论坛。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -131,6 +289,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013-04-26-bittorrent-sync-cong-zhe-kai-shi/">BitTorrent Sync 从这开始</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013-04-25-bittorrent-sync-zhong-ji-tong-bu-jie-jue-fang-an/">BitTorrent Sync，终极同步解决方案？</a>
